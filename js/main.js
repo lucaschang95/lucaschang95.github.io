@@ -5,19 +5,23 @@ const navGallery = document.querySelector('#navbar li:nth-of-type(3)');
 const navContact = document.querySelector('#navbar li:nth-of-type(4)');
 const homePositionDot = document.querySelector('#home .locationDot');
 const homeMap = document.querySelector('#home iframe');
+const downArrow = document.querySelector('#home img');
 const aboutPositionDot = document.querySelector('#about .locationDot');
 const aboutMap = document.querySelector('#about iframe');
 
+
+function scrollToAbout() {
+    document.querySelector('#about').scrollIntoView();
+}
+
+downArrow.addEventListener('click', scrollToAbout);
 
 navHome.addEventListener('click', function() {
     console.log('click navHome!');
     document.querySelector('#home').scrollIntoView();
 });
 
-navAbout.addEventListener('click', function() {
-    console.log('click navAbout!');
-    document.querySelector('#about').scrollIntoView();
-});
+navAbout.addEventListener('click', scrollToAbout);
 
 navGallery.addEventListener('click', function() {
     document.querySelector('#gallery').scrollIntoView();
@@ -37,17 +41,19 @@ homePositionDot.addEventListener('mouseleave', function(){
     homeMap.style.visibility = 'hidden';
 });
 
+/*
 aboutPositionDot.addEventListener('mouseenter', function(){
     console.log('mouse enter!');
     aboutMap.style.visibility = 'visible';
 });
 
+
 aboutPositionDot.addEventListener('mouseleave', function(){
     console.log('mouse leave!');
     aboutMap.style.visibility = 'hidden';
 });
-
+*/
 
 window.addEventListener('scroll', function() {
-    
+
 });
