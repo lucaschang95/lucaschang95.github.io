@@ -1,3 +1,4 @@
+const navbar = document.querySelector('#navbar');
 const navHome = document.querySelector('#navbar li:nth-of-type(1)');
 const navAbout = document.querySelector('#navbar li:nth-of-type(2)');
 const navGallery = document.querySelector('#navbar li:nth-of-type(3)');
@@ -44,4 +45,9 @@ aboutPositionDot.addEventListener('mouseenter', function(){
 aboutPositionDot.addEventListener('mouseleave', function(){
     console.log('mouse leave!');
     aboutMap.style.visibility = 'hidden';
+});
+
+
+window.addEventListener('scroll', function() {
+    
 });

@@ -4,6 +4,10 @@
     font-family: "Lato", "sans-serif";
 }
 
+body {
+    background-color: rgba(242, 253, 82, 0.863);
+}
+
 a {
     outline: none;
     text-decoration: none;
@@ -21,6 +25,10 @@ a:hover {
 
 a:active {
     color: red;
+}
+
+i {
+    margin: 0 15px;
 }
 
 .locationDot {
@@ -45,8 +53,8 @@ nav{
     font-weight: 600;
     width: 90%;
     padding: 0 5% 0 5%;
-    background-image: linear-gradient(135deg, orange, orange 50%, cyan);
-    opacity: 80%;
+    background-image: linear-gradient(135deg, rgba(255, 166, 0, 0.5), rgba(255, 166, 0, 0.5) 50%, rgba(0, 255, 255, 0.5));
+    opacity: 70%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -78,7 +86,7 @@ nav{
 
 #home {
     height: 100%;
-    background-color: rgba(255, 165, 0, 0.3);
+    background-color: rgba(250, 253, 70, 0.3);
     color: white;
     
     display: flex;
@@ -211,8 +219,12 @@ nav p {
     background-image: linear-gradient(135deg, orange, orange 60%, cyan);
 }
 
-#contact p {
+#contact p, #contact a {
     line-height: 2;
+}
+
+#contact a {
+    text-decoration: underline;
 }
 
 footer {
