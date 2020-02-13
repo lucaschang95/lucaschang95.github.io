@@ -9,72 +9,62 @@
 <body>
 
     <!-- navigation -->
-    <nav>
-        <section id="navbar">
-            <a href="#" alt="">Lucas Chang</a>
+    <div class="container">
+
+        <nav class="navbar">
             <ul>
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Gallery</a></li>
-                <li><a>Contact</a></li>
-                <li><a href="pdf/CV-lucaschang.pdf">Resume</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </section>
-            
+        </nav>
+
         <section id="home">
-            <div class="locationDot"></div>
-            <img src="svg/chevron-down-solid.svg" alt="down-arrow"></svg>
+            <div>
+                <h2>Hello, this is Lucas!</h2>
+                <a class="btn" href="pdf/CV-lucaschang.pdf">Resume</a>
+            </div>
         </section>
-    </nav>
 
-    <!-- main part, including 4 sections -->
-    <main>
-        
-        <!-- section1: about -->
         <section id="about">
-            <div>
-                <div>
-                    <h2>About Me</h2>
-                    <article>
-                        <p>This is Lucas Chang, a postgraduate in Tianjin Unversity.</p>
-                        <p>He is learing and getting familar with front-end development and want to find a relating job (or intern).</p>
-                    </article>
-                    <a href="pdf/CV-lucaschang.pdf">RESUME</a>
-                </div>
+            <div class="articlecontainer">
+                <h2>About</h2>
+                <hr>
+                <p>I'm Lucas Chang, a postgraduate in Tianjin Unversity.</p>
+                <p>He is learing and getting familar with front-end development and want to find a relating job (or intern).</p>
+                <p>Besides, badminton swimming and Dota2 are my favorite sports. </p>
             </div>
-            <div>
-                <img id="myphoto" src="img/lucas.jpg" alt="my photo in Italy">
-            </div>
+            <div class="imgcontainer"><img src="img/lucas.jpg" alt="image of lucas"></div>
+
         </section>
 
-        <!-- section2: gallery 
         <section id="gallery">
-
+            <div class="imgcontainer">
+                <img src="img/sprial-staircase.jpg" alt="vatican museum spiral staircase">
+                <p>Lucas Chang</p>
+            </div>
+            <div class="articlecontainer">
+                <h2>Gallery</h2>
+                <hr>
+                <p>Store the best moment.</p>
+                <a class="btn" href="#">&ensp;More&ensp;</a>
+            </div>
         </section>
-        -->
 
-        <!-- section3:contact -->
         <section id="contact">
             <h2>Contact</h2>
             <hr>
-            <div>
-                <p>Tianjin University, No.92 Weijin Road, Tianjin, China</p>
-                <p>(+86) 182-2285-9807</p>
-                <a href="mailto:xingzhao.chang@gmail.com">xingzhao.chang@gmail.com</a>
-            </div>
-            <div class='brandDiv'>
+            <p>Tianjin University, No.92 Weijin Road, Tianjin, China</p>
+            <p>(+86) 182-2285-9807</p>
+            <a href="mailto:xingzhao.chang@gmail.com">xingzhao.chang@gmail.com</a>
+            <div class='brandcontainer'>
                 <a href="https://github.com/lucaschang95"><img class='brand' src="svg/github-brands.svg" alt="github-brands"></a>
                 <a href="https://weibo.com/u/5661039763"><img class='brand' src="svg/weibo-brands.svg" alt="weibo-brands"></a>
-    
             </div>
         </section>
-    </main>
-
-    <!-- footer -->
-    <footer>
-        <p>Copyright©2020 All Rights Reserved</p>
-    </footer>
-
+    </div>
+    
     <script src="js/main.js"></script>
 </body>
 </html>
