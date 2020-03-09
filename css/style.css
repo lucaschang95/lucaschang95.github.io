@@ -140,7 +140,7 @@ hr {
 /* Home part */
 
 section#home {
-    background: url('../img/home-bg1.jpg') no-repeat center center/cover;
+    background: url('http://r.photo.store.qq.com/psc?/V13mdl0c1ilKRz/3pY6KhS62k*1Vm7UATlxq6egqzh4f935wdmTHpxwWn0OLffTruB7BLdwqAFG2JxeFHUj9w20ax06KoqMas3dNz.8d9y8uXIYMN7jNKK47*0!/r') no-repeat center center/cover;
     align-items: flex-start;
     justify-content: flex-end;
 }
@@ -158,21 +158,28 @@ section#home > div {
 section#home a {
     margin: 1.5rem;
     display: inline;
-
     opacity: 0;
-    animation-name: welcome;
-    animation-delay: 4s;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
+
 }
 
 section#home h2 {
     opacity: 0;
     position: relative;
+}
+
+.welcomeAnimationQuick {
     animation-name: welcome;
     animation-delay: 2s;
     animation-duration: 3s;
     animation-fill-mode: forwards;
+}
+
+.welcomeAnimationSlow {
+    animation-name: welcome;
+    animation-delay: 4s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+
 }
 
 @keyframes welcome {
